@@ -1,6 +1,6 @@
 package com.sunnyweather.android.logic.network
 
-import com.sunnyweather.android.MyApplication
+import com.sunnyweather.android.config.MyApplication
 import com.sunnyweather.android.logic.model.DailyResponse
 import com.sunnyweather.android.logic.model.RealtimeResponse
 import retrofit2.Call
