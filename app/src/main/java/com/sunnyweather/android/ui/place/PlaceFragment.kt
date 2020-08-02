@@ -33,6 +33,7 @@ class PlaceFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         // 对存储的数据进行判断和读取（选中的城市）
+        // 因为现在的 PlaceFragment 是会重用的，所以需要判断下是哪个 Activity
         if (activity is MainActivity && viewModel.isPlaceSaved()) {
             val place = viewModel.getSavedPlace()
             val intent = Intent(context, WeatherActivity::class.java).apply {

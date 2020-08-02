@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+<!-- androidx.drawerlayout.widget.DrawerLayout ：滑动菜单   -->
+<!-- androidx.swiperefreshlayout.widget.SwipeRefreshLayout：下拉刷新   -->
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipeRefresh"
         android:layout_width="match_parent"
@@ -42,7 +44,7 @@
         android:clickable="true"
         android:focusable="true"
         android:background="@color/colorPrimary">
-
+<!-- 为了让 Fragment 中的搜索框不至于和系统重合，这里特意使用外层包裹布局的方式让它向下偏移了一段距离-->
         <fragment
             android:id="@+id/placeFragment"
             android:name="com.sunnyweather.android.ui.place.PlaceFragment"

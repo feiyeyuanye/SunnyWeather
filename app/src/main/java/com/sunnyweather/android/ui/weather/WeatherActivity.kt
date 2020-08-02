@@ -71,9 +71,11 @@ class WeatherActivity : AppCompatActivity() {
         swipeRefresh.setOnRefreshListener {
             refreshWeather()
         }
+        // 点击切换按钮，打开滑动菜单
         navBtn.setOnClickListener {
             drawerLayout.openDrawer(GravityCompat.START)
         }
+        // 监听 DrawerLayout 的状态，当滑动菜单被隐藏时，同时隐藏输入法。
         drawerLayout.addDrawerListener(object : DrawerLayout.DrawerListener {
             override fun onDrawerStateChanged(newState: Int) {}
 

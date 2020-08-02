@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:fitsSystemWindows="true">
-
+<!-- 添加切换城市的按钮 -->
         <Button
             android:id="@+id/navBtn"
             android:layout_width="30dp"
